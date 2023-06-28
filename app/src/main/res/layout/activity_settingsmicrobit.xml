@@ -39,16 +39,16 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="2dp">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="20dp">
 
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3572DE"
-                    android:gravity="center"
                     android:fontFamily="sans-serif-black"
+                    android:gravity="center"
                     android:text="Information about Microbit"
                     android:textColor="#F4F1F1"
                     android:textSize="30sp" />
@@ -82,7 +82,8 @@
                                   Phone:0906431000
                                   Website:Ericsson.com"
                     android:textColor="#FAF6F6"
-                    android:textColorHighlight="#0B0A0A" />
+                    android:textColorHighlight="#0B0A0A"
+                    tools:ignore="TextContrastCheck" />
         </LinearLayout>
 
         <Button
