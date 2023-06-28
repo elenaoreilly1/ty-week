@@ -34,10 +34,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="409dp"
-        android:layout_height="78dp"
-        android:background="#03E1FD"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -47,10 +47,11 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="421dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:background="#3572DE"
+            android:gravity="center"
             android:text="Information about Internet Security"
             android:textColor="#F8F5F5"
             android:textSize="30sp"

@@ -48,20 +48,19 @@
 
         <EditText
             android:id="@+id/editTextText3"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:text="      Information about the Scrum Team"
-            android:textColor="#FDFCFC"
-            android:textSize="24sp" />
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Information about the Scrum Team"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-black"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout10"
-        android:layout_width="414dp"
-        android:layout_height="134dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#3572DE"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,19 +70,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine6"
+        <RelativeLayout
+            android:id="@+id/tyweekfooter"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:text="Contact us:
-                                     Email:INFO@EST.TECH
-                                     Phone:0906431000
-                                     Website:Ericsson.com"
-            android:textColor="#FDFCFC"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#3572de">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:text="Contact Us"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,VisualLintOverlap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:gravity="bottom"
+                android:text="Email: infuse@ericsson.com"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,VisualLintOverlap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:gravity="bottom"
+                android:text="Phone: (086) 234 5678"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,VisualLintOverlap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:gravity="bottom"
+                android:text="Website: www.ericsson.com"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
     </LinearLayout>
 
     <Button

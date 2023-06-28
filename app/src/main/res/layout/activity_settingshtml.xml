@@ -10,7 +10,7 @@
         android:id="@+id/textView3"
         android:layout_width="374dp"
         android:layout_height="388dp"
-        android:text="The Hypertext Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.  Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.  HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page."
+        android:text="@string/the_hypertext_markup_language_or_html_is_the_standard_markup_language_for_documents_designed_to_be_displayed_in_a_web_browser_it_is_often_assisted_by_technologies_such_as_cascading_style_sheets_css_and_scripting_languages_such_as_javascript_web_browsers_receive_html_documents_from_a_web_server_or_from_local_storage_and_render_the_documents_into_multimedia_web_pages_html_describes_the_structure_of_a_web_page_semantically_and_originally_included_cues_for_its_appearance_html_elements_are_the_building_blocks_of_html_pages_with_html_constructs_images_and_other_objects_such_as_interactive_forms_may_be_embedded_into_the_rendered_page"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,38 +18,43 @@
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.216"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="327dp"
         android:layout_height="135dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.684"
-        app:srcCompat="@drawable/html" />
+        app:srcCompat="@drawable/html"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="409dp"
-        android:layout_height="78dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:background="#3572DE"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextSizeCheck">
 
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="378dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="    Information about Html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/information_about_html"
             android:textColor="#FAF6F6"
             android:textSize="34sp" />
     </LinearLayout>
@@ -65,7 +70,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck">
 
         <EditText
             android:id="@+id/editTextTextMultiLine4"
@@ -80,7 +86,8 @@
                           Phone:0906431000
                           Website:Ericsson.com"
             android:textColor="#F6F5F5"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:ignore="Autofill,HardcodedText,InefficientWeight,LabelFor" />
     </LinearLayout>
 
     <Button
@@ -97,6 +104,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,21 +23,19 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="425dp"
-        android:layout_height="67dp"
-        android:background="#01DFFB"
-        android:backgroundTint="#02E2FF"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="3dp">
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3572de"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="410dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:background="#3572DE"
-            android:text="    Information about Python"
+            android:text="Information about Python"
             android:textColor="#FBFBFB"
             android:textSize="30sp" />
     </LinearLayout>
@@ -68,7 +66,8 @@
                                      Email:INFO@EST.TECH
                    Phone:0906431000
                    Website:Ericsson.com"
-            android:textColor="#FAF9F9" />
+            android:textColor="#FAF9F9"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
     <ImageView
